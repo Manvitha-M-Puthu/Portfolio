@@ -6,6 +6,7 @@
     <title>Manvitha M Puthu</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="skills.css">
+    <link rel="stylesheet" href="projects.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
@@ -385,67 +386,225 @@
     </section> 
     
     <section class="projects" id="projects">
-        <div class="projects-box">
-            <h2 class="heading">Projects</h2>
-            <div class="project-filters">
-                <button class="filter-btn active" data-filter="all">All</button>
-                <button class="filter-btn" data-filter="websites">Websites</button>
-                <button class="filter-btn" data-filter="design">Design</button>
+        <div class="projects-header">
+            <h2>My Projects</h2>
+            <p>Showcasing my journey through code, design, and innovation</p>
+        </div>
+
+        <div class="project-stats">
+            <div class="stat-item">
+                <span class="stat-number">10+</span>
+                <span class="stat-label">Projects</span>
             </div>
-            <div class="wrapper">
-                <div class="websites-row">
-                    <div class="projects-item websites">
-                        <div class="project-img-container">
-                            <img src="./images/sample-project-image.jpeg" alt="Project-1" class="project-img">
-                            <div class="project-overlay">
-                                <h2>E-Kart</h2>
-                                <p>This is a project done for Javascript practice, it is responsive you can check out my Github repo and check out the code</p>
-                            </div>
-                        </div>
-                        <div class="project-skills">
-                            <span class="skill-capsule">HTML</span>
-                            <span class="skill-capsule">CSS</span>
-                            <span class="skill-capsule">JavaScript</span>
-                            <span class="skill-capsule">Responsive</span>
-                        </div>
-                        <div class="projects-btn-grp">
-                            <a href="#">Page</a>
-                            <a href="https://github.com/Manvitha-M-Puthu/E-Kart">Repo</a>
-                        </div>
-                    </div>
-                    <div class="projects-item websites">
-                        <div class="project-img-container">
-                            <img src="./images/sample-project-image.jpeg" alt="Project-2" class="project-img">
-                            <div class="project-overlay">
-                                <h2>Youtube-clone</h2>
-                                <p>This project is done for HTML, CSS Practice, page is responsive for all the webpage sizes.</p>
-                            </div>
-                        </div>
-                        <div class="project-skills">
-                            <span class="skill-capsule">HTML</span>
-                            <span class="skill-capsule">CSS</span>
-                            <span class="skill-capsule">Responsive</span>
-                        </div>
-                        <div class="projects-btn-grp">
-                            <a href="#">Page</a>
-                            <a href="https://github.com/Manvitha-M-Puthu/YoutubeClone">Repo</a>
+            <div class="stat-item">
+                <span class="stat-number">3</span>
+                <span class="stat-label">Categories</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">5+</span>
+                <span class="stat-label">Technologies</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">2+</span>
+                <span class="stat-label">Years</span>
+            </div>
+        </div>
+
+        <div class="project-filters">
+            <button class="filter-btn active" data-filter="all">All Projects</button>
+            <button class="filter-btn" data-filter="websites">Web Development</button>
+            <button class="filter-btn" data-filter="design">Design</button>
+            <button class="filter-btn" data-filter="python">Python</button>
+        </div>
+
+        <div class="projects-grid">
+            <div class="project-card websites fade-in">
+                <div class="project-image">
+                    <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=500&h=300&fit=crop" alt="E-Kart Project">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i class='bx bx-link-external'></i> Live Demo
+                            </a>
+                            <a href="https://github.com/Manvitha-M-Puthu/E-Kart" class="project-link">
+                                <i class='bx bxl-github'></i> Code
+                            </a>
                         </div>
                     </div>
                 </div>
-                <div class="design-row">
-                    <div class="projects-item design">
-                        <div class="project-img-container">
-                            <img src="./images/sample-project-image.jpeg" alt="Project-3" class="project-img">
-                            <div class="project-overlay">
-                                <h2>Python-mini-Games</h2>
-                                <p>Small mini python projects done while doing Python practice.</p>
-                            </div>
+                <div class="project-content">
+                    <h3 class="project-title">E-Kart</h3>
+                    <p class="project-description">A responsive e-commerce shopping cart application built with vanilla JavaScript. Features include product listing, cart management, and responsive design across all devices.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML5</span>
+                        <span class="tech-tag">CSS3</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">Responsive</span>
+                    </div>
+                    <div class="project-status">
+                        <div class="status-dot"></div>
+                        <span>Completed</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card websites fade-in">
+                <div class="project-image">
+                    <img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=500&h=300&fit=crop" alt="YouTube Clone">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i class='bx bx-link-external'></i> Live Demo
+                            </a>
+                            <a href="https://github.com/Manvitha-M-Puthu/YoutubeClone" class="project-link">
+                                <i class='bx bxl-github'></i> Code
+                            </a>
                         </div>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">YouTube Clone</h3>
+                    <p class="project-description">A pixel-perfect recreation of YouTube's interface focusing on responsive design principles. Built with HTML and CSS to master layout techniques and modern web styling.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML5</span>
+                        <span class="tech-tag">CSS3</span>
+                        <span class="tech-tag">Flexbox</span>
+                        <span class="tech-tag">Grid</span>
+                    </div>
+                    <div class="project-status">
+                        <div class="status-dot"></div>
+                        <span>Completed</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card python fade-in">
+                <div class="project-image">
+                    <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?w=500&h=300&fit=crop" alt="Python Mini Games">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i class='bx bx-link-external'></i> View Games
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class='bx bxl-github'></i> Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Python Mini Games</h3>
+                    <p class="project-description">Collection of interactive console games including Snake, Tic-Tac-Toe, and Number Guessing. Built while learning Python fundamentals and game logic implementation.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Game Logic</span>
+                        <span class="tech-tag">OOP</span>
+                    </div>
+                    <div class="project-status">
+                        <div class="status-dot"></div>
+                        <span>Completed</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card websites fade-in">
+                <div class="project-image">
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500&h=300&fit=crop" alt="Portfolio Website">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i class='bx bx-link-external'></i> Live Site
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class='bx bxl-github'></i> Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Portfolio Website</h3>
+                    <p class="project-description">Personal portfolio website showcasing my skills, projects, and journey. Features smooth animations, responsive design, and modern UI/UX principles.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML5</span>
+                        <span class="tech-tag">CSS3</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">Animations</span>
+                    </div>
+                    <div class="project-status">
+                        <div class="status-dot in-progress"></div>
+                        <span>In Progress</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card design fade-in">
+                <div class="project-image">
+                    <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=500&h=300&fit=crop" alt="UI/UX Designs">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i class='bx bx-link-external'></i> View Designs
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class='bx bxl-figma'></i> Figma
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">UI/UX Design Collection</h3>
+                    <p class="project-description">A curated collection of user interface designs created for various club events and personal projects. Focusing on user experience and modern design trends.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Figma</span>
+                        <span class="tech-tag">Photoshop</span>
+                        <span class="tech-tag">Canva</span>
+                        <span class="tech-tag">UI/UX</span>
+                    </div>
+                    <div class="project-status">
+                        <div class="status-dot"></div>
+                        <span>Ongoing</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card websites fade-in">
+                <div class="project-image">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=500&h=300&fit=crop" alt="Data Visualization">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i class='bx bx-link-external'></i> Live Demo
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class='bx bxl-github'></i> Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Data Visualization Dashboard</h3>
+                    <p class="project-description">Interactive dashboard for visualizing complex datasets with charts and graphs. Built with modern web technologies and data visualization libraries.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">D3.js</span>
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">MongoDB</span>
+                    </div>
+                    <div class="project-status">
+                        <div class="status-dot in-progress"></div>
+                        <span>In Progress</span>
                     </div>
                 </div>
             </div>
         </div>
+
+        <div class="view-more">
+            <a href="https://github.com/Manvitha-M-Puthu" class="view-more-btn">
+                <i class='bx bxl-github'></i> View More on GitHub
+            </a>
+        </div>
     </section>
+
     <section class="contact" id="contact">
         <h2 class="heading">Contact <span>Me</span></h2>
 

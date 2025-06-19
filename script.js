@@ -5,7 +5,6 @@ let navLinks = document.querySelectorAll('header nav a');
 let themeToggle = document.querySelector('#theme-toggle');
 let body = document.body;
 
-// Theme toggle functionality
 const toggleTheme = () => {
     body.classList.toggle('light-theme');
     const icon = themeToggle.querySelector('i');
@@ -13,7 +12,6 @@ const toggleTheme = () => {
     if (body.classList.contains('light-theme')) {
         icon.classList.remove('bx-moon');
         icon.classList.add('bx-sun');
-        // Save theme preference
         localStorage.setItem('theme', 'light');
     } else {
         icon.classList.remove('bx-sun');
@@ -23,7 +21,6 @@ const toggleTheme = () => {
     }
 };
 
-// Load saved theme preference
 window.addEventListener('DOMContentLoaded', () => {
     const savedTheme = localStorage.getItem('theme');
     if (savedTheme === 'light') {
@@ -39,7 +36,6 @@ menuIcon.onclick = () => {
     menuIcon.classList.toggle('bx-x');
 };
 
-// Fix scroll functionality
 window.onscroll = () => {
     sections.forEach(sec => {
         let top = window.scrollY;
@@ -55,18 +51,15 @@ window.onscroll = () => {
         }
     });
 
-    // Hide mobile menu on scroll
     navbar.classList.remove('active');
     menuIcon.classList.remove('bx-x');
 };
 
-// Project filter functionality
 const filterBtns = document.querySelectorAll('.filter-btn');
 const projectItems = document.querySelectorAll('.projects-item');
 
 filterBtns.forEach(btn => {
   btn.addEventListener('click', function() {
-    // Remove active from all
     filterBtns.forEach(b => b.classList.remove('active'));
     this.classList.add('active');
     const filter = this.getAttribute('data-filter');
@@ -106,14 +99,12 @@ document.querySelectorAll('.skill-category').forEach(category => {
   observer.observe(category);
 });
 
-// Add some interactivity to stat cards
 document.querySelectorAll('.stat-card').forEach(card => {
   card.addEventListener('mouseenter', () => {
       const number = card.querySelector('.stat-number');
       const originalText = number.textContent;
       const numValue = parseInt(originalText);
       
-      // Animate the number
       let current = 0;
       const increment = numValue / 20;
       const timer = setInterval(() => {
