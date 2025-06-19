@@ -137,7 +137,6 @@ body.light-theme .logo span {
     transition: 0.3s ease;
     border-bottom:3px solid transparent;
 }
-
 .navbar a:hover, .navbar a.active{
     color: var(--main-color);
     border-bottom: 3px solid var(--main-color);
@@ -163,14 +162,12 @@ section{
     min-height: 100vh;
     padding:10rem 12% 10rem;
 }
-
 .home{
     display:flex;
     align-items: center;
     justify-content: center;
     gap:15rem;
 }
-
 .home-content{
     display:flex;
     flex-direction: column;
@@ -193,7 +190,6 @@ body.light-theme span {
     margin-bottom: 2rem;
     margin-top: 1rem;
 }
-
 .home-content h1{
     font-size: 7rem;
     font-weight: 700;
@@ -214,7 +210,6 @@ body.light-theme span {
     cursor: pointer;
     transition: 0.4s ease-in-out;
 }
-
 .home-img img:hover{
     box-shadow: 0 0 25px var(--main-color),
                 0 0 50px var(--main-color),
@@ -237,7 +232,6 @@ body.light-theme .home-img img:hover {
     line-height: 1.8;
     max-width:1000px;
 }
-
 .social-icons a{
     display: inline-flex;
     justify-content: center;
@@ -285,7 +279,6 @@ body.light-theme .social-icons a:hover {
     transition: 0.3s ease-in-out;
     cursor: pointer;
 }
-
 .btn:hover{
     transform: scale(1.05);
     box-shadow: 0 0 50px var(--main-color);
@@ -309,7 +302,6 @@ body.light-theme .btn:hover {
     align-items: center;
     gap:1.5rem;
 }
-
 .btn-group a:nth-of-type(2){
     background-color: black;
     color:var(--main-color);
@@ -366,7 +358,6 @@ body.light-theme .text-animation span::before {
     right:-8px;
     animation: cursor 0.6s infinite, typing 20s steps(14) infinite;
 }
-
 @keyframes cursor {
     to{
         border-left: 2px solid var(--main-color);
@@ -456,12 +447,10 @@ body.light-theme .timeline-items::before {
     padding-right: calc(50% + 30px);
     text-align: right;
 }
-
 .timeline-item:nth-child(even){
     padding-left:calc(50% + 30px);
     text-align: left;
 }
-
 .timeline-dot{
     height:21px;
     width:21px;
@@ -495,7 +484,6 @@ body.light-theme .timeline-dot {
     cursor: pointer;
     transition:0.3s ease-in-out;
 }
-
 .timeline-content:hover{
     transform:scale(1.05);
     box-shadow: 0 0 25px var(--main-color);
@@ -634,7 +622,6 @@ body.light-theme .skills-box:hover {
     align-items: baseline;
     padding:5rem 5rem;
 }
-
 .skills-info h3{
     font-size: 3rem;
     font-weight: 800;
@@ -944,7 +931,6 @@ body.light-theme .project-overlay p {
     justify-content: center;
     flex-wrap: wrap;
 }
-
 .contact form .input-box input, .contact form textarea{
     width:100%;
     padding:2.5rem;
@@ -1027,7 +1013,6 @@ body.light-theme .contact form textarea {
     display: inline-block;
     padding:0 15px;
 }
-
 .footer .copyright{
     margin-top: 50px;
     text-align: center;
@@ -1089,7 +1074,6 @@ body.light-theme .footer {
         padding: 2rem 3%;
     }
 }
-
 @media(max-width:895px){
     #menu-icon{
         display:block;
