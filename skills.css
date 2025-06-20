@@ -1,7 +1,6 @@
-
 .skills {
     padding: 8rem 5% 5rem;
-    background: linear-gradient(135deg, var(--bg-color) 0%, #0a1a2a 100%);
+    background: linear-gradient(135deg, var(--bg-color) 0%, var(--gradient-end, #0a1a2a) 100%);
     min-height: 100vh;
 }
 
@@ -20,12 +19,12 @@
     font-weight: 700;
     color: var(--main-color);
     margin-bottom: 1rem;
-    text-shadow: 0 0 20px rgba(0, 171, 240, 0.3);
+    text-shadow: 0 0 20px var(--glow-color, rgba(0, 171, 240, 0.3));
 }
 
 .skills-header p {
     font-size: 1.6rem;
-    color: #b3c6d4;
+    color: var(--secondary-text, #b3c6d4);
     max-width: 600px;
     margin: 0 auto;
 }
@@ -43,13 +42,13 @@
     border-radius: 15px;
     text-align: center;
     backdrop-filter: blur(10px);
-    border: 1px solid rgba(0, 171, 240, 0.1);
+    border: 1px solid var(--border-color, rgba(0, 171, 240, 0.1));
     transition: all 0.3s ease;
 }
 
 .stat-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 30px rgba(0, 171, 240, 0.2);
+    box-shadow: 0 10px 30px var(--shadow-color, rgba(0, 171, 240, 0.2));
 }
 
 .stat-number {
@@ -61,7 +60,7 @@
 
 .stat-label {
     font-size: 1.2rem;
-    color: #b3c6d4;
+    color: var(--secondary-text, #b3c6d4);
     margin-top: 0.5rem;
 }
 
@@ -97,13 +96,13 @@
 .category-icon {
     width: 60px;
     height: 60px;
-    background: linear-gradient(135deg, var(--main-color), #0056b3);
+    background: var(--category-icon-bg, linear-gradient(135deg, var(--main-color), #0056b3));
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 1.8rem;
-    color: white;
+    color: var(--category-icon-text, white);
 }
 
 .category-title {
@@ -115,7 +114,7 @@
 
 .category-description {
     font-size: 1.4rem;
-    color: #b3c6d4;
+    color: var(--secondary-text, #b3c6d4);
     margin-bottom: 2.5rem;
     max-width: 800px;
 }
@@ -133,7 +132,7 @@
     border-radius: 20px;
     text-align: center;
     backdrop-filter: blur(10px);
-    border: 1px solid rgba(0, 171, 240, 0.1);
+    border: 1px solid var(--border-color, rgba(0, 171, 240, 0.1));
     transition: all 0.4s ease;
     position: relative;
     overflow: hidden;
@@ -146,7 +145,7 @@
     left: -100%;
     width: 100%;
     height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(0, 171, 240, 0.1), transparent);
+    background: var(--card-shimmer, linear-gradient(90deg, transparent, rgba(0, 171, 240, 0.1), transparent));
     transition: left 0.5s ease;
 }
 
@@ -156,7 +155,7 @@
 
 .skill-card:hover {
     transform: translateY(-10px) scale(1.02);
-    box-shadow: 0 20px 40px rgba(0, 171, 240, 0.3);
+    box-shadow: 0 20px 40px var(--shadow-color, rgba(0, 171, 240, 0.3));
     border-color: var(--main-color);
 }
 
@@ -183,7 +182,7 @@
 .skill-name {
     font-size: 1.4rem;
     font-weight: 600;
-    color: white;
+    color: var(--text-color);
     margin-bottom: 1rem;
     text-transform: uppercase;
     letter-spacing: 0.5px;
@@ -195,21 +194,21 @@
 
 .skill-level-text {
     font-size: 1rem;
-    color: #b3c6d4;
+    color: var(--secondary-text, #b3c6d4);
     margin-bottom: 0.5rem;
 }
 
 .progress-bar {
     width: 100%;
     height: 8px;
-    background: rgba(255, 255, 255, 0.1);
+    background: var(--progress-bg, rgba(255, 255, 255, 0.1));
     border-radius: 10px;
     overflow: hidden;
 }
 
 .progress-fill {
     height: 100%;
-    background: linear-gradient(90deg, var(--main-color), #0056b3);
+    background: var(--progress-fill, linear-gradient(90deg, var(--main-color), #0056b3));
     border-radius: 10px;
     transition: width 2s ease;
     position: relative;
@@ -222,7 +221,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+    background: var(--progress-shimmer, linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent));
     animation: shimmer 2s infinite;
 }
 
@@ -233,7 +232,7 @@
 
 .skill-experience {
     font-size: 0.9rem;
-    color: #b3c6d4;
+    color: var(--secondary-text, #b3c6d4);
     margin-top: 1rem;
 }
 
@@ -276,16 +275,69 @@
     background: var(--card-bg);
     padding: 1rem 2rem;
     border-radius: 25px;
-    color: white;
+    color: var(--text-color);
     text-decoration: none;
     transition: all 0.3s ease;
-    border: 1px solid rgba(0, 171, 240, 0.3);
+    border: 1px solid var(--border-color, rgba(0, 171, 240, 0.3));
 }
 
 .cert-badge:hover {
     background: var(--main-color);
+    color: var(--cert-hover-text, white);
     transform: translateY(-3px);
-    box-shadow: 0 5px 15px rgba(0, 171, 240, 0.4);
+    box-shadow: 0 5px 15px var(--shadow-color, rgba(0, 171, 240, 0.4));
+}
+
+/* Light Theme Specific Styles */
+body.light-theme .skills {
+    --gradient-end: #FFF2EB;
+    --glow-color: rgba(255, 214, 186, 0.4);
+    --secondary-text: #8B5A3C;
+    --border-color: rgba(255, 214, 186, 0.3);
+    --shadow-color: rgba(255, 214, 186, 0.2);
+    --card-shimmer: linear-gradient(90deg, transparent, rgba(255, 214, 186, 0.15), transparent);
+    --category-icon-bg: linear-gradient(135deg, #FFD6BA, #E6C3A6);
+    --category-icon-text: #8B5A3C;
+    --progress-bg: rgba(139, 90, 60, 0.2);
+    --progress-fill: linear-gradient(90deg, #FFD6BA, #E6C3A6);
+    --progress-shimmer: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+    --cert-hover-text: #8B5A3C;
+}
+
+body.light-theme .skills-header h2 {
+    color: #8B5A3C;
+}
+
+body.light-theme .category-title {
+    color: #8B5A3C;
+}
+
+body.light-theme .stat-number {
+    color: #8B5A3C;
+}
+
+body.light-theme .certifications h3 {
+    color: #8B5A3C;
+}
+
+body.light-theme .cert-badge:hover {
+    background: #FFD6BA;
+    color: #8B5A3C;
+}
+
+/* Light theme card background */
+body.light-theme .skill-card,
+body.light-theme .stat-card,
+body.light-theme .cert-badge {
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 214, 186, 0.3);
+}
+
+body.light-theme .skill-card:hover,
+body.light-theme .stat-card:hover {
+    box-shadow: 0 10px 30px rgba(255, 214, 186, 0.3);
+    border-color: #FFD6BA;
 }
 
 @media (max-width: 768px) {
